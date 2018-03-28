@@ -18,7 +18,7 @@ import javax.imageio.ImageIO;
 public class Spritemap2chieu {
 
      public static void join(String inputPath,String outputPath) throws IOException{
-        
+        //input thư mục chứa những sprite ban đầu, output là nơi chứa spritemap
         File directory= new File(inputPath);
       
         File[] files=directory.listFiles();
@@ -29,7 +29,7 @@ public class Spritemap2chieu {
         int height=sprite.getHeight()*(files.length/2);
         System.out.println(with);
         System.out.println(height);
-        
+        //xây dựng spritemap(1 map gồm nhiều sprite) bằng buffered (mỗi tấm ảnh là 1 sprite)
         BufferedImage spritemap = new BufferedImage(with, height,BufferedImage.TYPE_INT_RGB);
         Graphics2D g2d=spritemap.createGraphics();
         
