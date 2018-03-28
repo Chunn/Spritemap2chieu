@@ -33,7 +33,7 @@ public class Spritemap2chieu {
         BufferedImage spritemap = new BufferedImage(with, height,BufferedImage.TYPE_INT_RGB);
         Graphics2D g2d=spritemap.createGraphics();
         
-       int x=0,y=0, dem=0, row=3;
+       int x=0,y=0, dem=0, row=2;
       
        for(File file:files){
            
